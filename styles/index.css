@@ -2,4 +2,155 @@
   padding: 0;
   margin: 0;
 }
+
+* body {
+  background-color: #111111;
+  color: #E4E4E4;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+* body a {
+  color: #0094FF;
+}
+
+* body h3 {
+  display: inline;
+}
+
+* body .text-highlight {
+  color: #0094FF;
+  display: inline !important;
+}
+
+* body .console-font {
+  font-family: "Consolas" !important;
+  color: #0094FF !important;
+  display: inline;
+}
+
+* body section > .console-font {
+  font-size: 1.25em;
+}
+
+* body .hero {
+  height: 35rem;
+  background: linear-gradient(150.26deg, rgba(0, 39, 67, 0.9) 10.27%, rgba(0, 52, 90, 0.9) 92.01%), url("../resources/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #A7A7A7;
+}
+
+* body .hero .hero-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 6em;
+}
+
+* body .hero .hero-container h1 {
+  font-size: 2.4em;
+  color: #DEDEDE;
+}
+
+* body .hero .hero-container h2 {
+  margin-bottom: 1em;
+}
+
+* body .hero .hero-container .hero-text {
+  display: inline;
+  margin-top: 2em !important;
+}
+
+* body .hero .hero-container a {
+  font-family: "Consolas";
+  display: block;
+  width: 100%;
+  text-decoration: none !important;
+  color: #0094FF;
+  border: 1px solid #0094FF;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.6em 0;
+  font-weight: 700 !important;
+  margin-top: 1.5em !important;
+}
+
+* body .hero .hero-container a:hover {
+  background-color: #0095ff18;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+* body .hero .hero-container img {
+  position: absolute;
+  top: 1em;
+  right: -1em;
+  width: 10em;
+  z-index: 0 !important;
+}
+
+* body main {
+  padding-top: 2em;
+  margin: 0 auto;
+  width: 80%;
+}
+
+* body main .heading {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content max-content auto;
+      grid-template-columns: -webkit-max-content -webkit-max-content auto;
+      grid-template-columns: max-content max-content auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body main .heading p, * body main .heading h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: .2em;
+}
+
+* body main .heading .heading-line {
+  margin-left: .3em;
+  height: .1em;
+  border-radius: 4px;
+  background-color: #ececec86;
+}
+
+* body main .about .about-text {
+  padding-top: 1em;
+}
+
+* body main .about .technologies ul {
+  list-style: none;
+  padding: 1em 2em;
+}
+
+* body main .about .technologies ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #0094FF;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+* body main .about img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 2px solid white;
+  margin-bottom: 1em;
+}
 /*# sourceMappingURL=index.css.map */

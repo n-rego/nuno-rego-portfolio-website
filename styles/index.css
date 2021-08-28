@@ -29,16 +29,21 @@
   display: inline;
 }
 
+* body article {
+  padding-top: 2em;
+}
+
 * body section > .console-font {
   font-size: 1.25em;
 }
 
 * body .hero {
-  height: 35rem;
+  position: relative;
+  min-height: 35rem;
   background: linear-gradient(150.26deg, rgba(0, 39, 67, 0.9) 10.27%, rgba(0, 52, 90, 0.9) 92.01%), url("../resources/hero.jpg");
   background-position: center;
   background-size: cover;
-  color: #A7A7A7;
+  color: #E4E4E4;
 }
 
 * body .hero .hero-container {
@@ -50,7 +55,7 @@
 
 * body .hero .hero-container h1 {
   font-size: 2.4em;
-  color: #DEDEDE;
+  color: #E4E4E4;
 }
 
 * body .hero .hero-container h2 {
@@ -58,8 +63,8 @@
 }
 
 * body .hero .hero-container .hero-text {
-  display: inline;
-  margin-top: 2em !important;
+  display: inline !important;
+  margin-top: 2em;
 }
 
 * body .hero .hero-container a {
@@ -86,12 +91,35 @@
   position: absolute;
   top: 1em;
   right: -1em;
-  width: 10em;
+  width: 180px;
   z-index: 0 !important;
 }
 
+* body .hero .socials {
+  position: absolute;
+  bottom: -1.5em;
+  right: 10%;
+  background: #141414;
+  border-radius: 4px;
+  -webkit-filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.15));
+  padding: .7em 2em;
+}
+
+* body .hero .socials i {
+  margin: 0 1em;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+* body .hero .socials i:hover {
+  color: white !important;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
 * body main {
-  padding-top: 2em;
+  padding-top: 1em;
   margin: 0 auto;
   width: 80%;
 }
@@ -116,9 +144,9 @@
 
 * body main .heading .heading-line {
   margin-left: .3em;
-  height: .1em;
+  height: 1px;
   border-radius: 4px;
-  background-color: #ececec86;
+  background-color: #ececec42;
 }
 
 * body main .about .about-text {
@@ -146,11 +174,191 @@
 }
 
 * body main .about img {
-  width: 80%;
+  width: 70%;
+  max-width: 350px;
   display: block;
   margin: 0 auto;
   border-radius: 4px;
   border: 2px solid white;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+* body main .built .project-container {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* body main .built .project-container .main-project {
+  position: relative;
+  min-height: 20em;
+  max-width: 28em;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+* body main .built .project-container .main-project .title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: .5em;
+          column-gap: .5em;
+  margin-bottom: .5em;
+}
+
+* body main .built .project-container .main-project .title .logo {
+  width: 2em;
+}
+
+* body main .built .project-container .main-project .title .type {
+  display: block;
+  font-size: .8em;
+}
+
+* body main .built .project-container .main-project .title .oceans {
+  color: #E33E29 !important;
+}
+
+* body main .built .project-container .main-project .title .amigo {
+  color: #E2BF78 !important;
+}
+
+* body main .built .project-container .main-project .title .name {
+  display: inline;
+}
+
+* body main .built .project-container .main-project .title .link-btn {
+  position: relative;
+  width: 1em;
+  min-height: 100%;
+}
+
+* body main .built .project-container .main-project .title .link-btn i {
+  position: absolute;
+  bottom: .4em;
+  right: 0;
+}
+
+* body main .built .project-container .main-project aside {
+  background: #242424;
+  -webkit-box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  width: 65%;
+  min-height: 5em;
+  z-index: 2;
+}
+
+* body main .built .project-container .main-project .project-photo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 140px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+* body main .built .project-container .inverted.main-project .title {
+  float: right;
+}
+
+* body main .built .project-container .inverted.main-project aside {
+  margin-left: 25%;
+}
+
+* body main .built .project-container .inverted.main-project .project-photo {
+  right: unset;
+}
+
+* body footer {
+  min-height: 6em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: Consolas, monaco, monospace;
+  color: #949494 !important;
+  font-size: 0.7em;
+}
+
+* body footer a {
+  color: #949494 !important;
+}
+
+@media only screen and (min-width: 700px) {
+  * {
+    font-size: 16px;
+  }
+  * main, * .hero-container {
+    width: 70% !important;
+  }
+  * .hero .hero-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 40%;
+        grid-template-columns: auto 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .hero .hero-container .content-container .hero-text {
+    margin-top: unset !important;
+  }
+  * .hero .hero-container .image-container {
+    width: 100% !important;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .hero .hero-container .image-container img {
+    position: relative !important;
+    width: 100% !important;
+    display: block;
+    text-align: center;
+  }
+  * .hero .socials {
+    right: 20% !important;
+  }
+  * .about-text .top-content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  * .about-text .technologies ul li {
+    float: left;
+    margin-left: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  * {
+    font-size: 17px;
+  }
+  * main, * .hero-container {
+    width: 60% !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -196,7 +196,7 @@
   position: relative;
   min-height: 20em;
   max-width: 28em;
-  margin: 1em auto;
+  margin: 2em auto;
 }
 
 * body main .built .project-container .main-project .title {
@@ -288,7 +288,7 @@
 }
 
 * body footer {
-  min-height: 6em;
+  min-height: 10em;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;

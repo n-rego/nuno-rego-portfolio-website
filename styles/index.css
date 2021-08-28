@@ -24,7 +24,7 @@
 }
 
 * body .console-font {
-  font-family: "Consolas" !important;
+  font-family: Consolas, monaco, monospace !important;
   color: #0094FF !important;
   display: inline;
 }
@@ -63,7 +63,7 @@
 }
 
 * body .hero .hero-container a {
-  font-family: "Consolas";
+  font-family: Consolas, monaco, monospace;
   display: block;
   width: 100%;
   text-decoration: none !important;

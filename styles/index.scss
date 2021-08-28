@@ -192,8 +192,7 @@ $secondary-font: Consolas,monaco,monospace;
                   position: relative;
                   min-height: 20em;
                   max-width: 28em;
-                  margin: 0 auto;
-                  padding-top: 1em;
+                  margin: 1em auto;
 
                   .title {
                      display: grid;
@@ -252,7 +251,7 @@ $secondary-font: Consolas,monaco,monospace;
                   .project-photo {
                      position: absolute;
                      right: 0;
-                     top: 0;
+                     bottom: -1.5em;
                      z-index: -1;
                      width: 140px;
                      height: auto;
@@ -295,12 +294,23 @@ $secondary-font: Consolas,monaco,monospace;
    }
 }
 
+@media only screen and (min-width: 500px) { 
+   .project-photo {
+      bottom: unset;
+      top: 0;
+   }
+}
+
 @media only screen and (min-width: 700px) {
    * {
       font-size: 16px;
 
       main,.hero-container {
          width: 70% !important;
+      }
+
+      article {
+         padding-top: 8em !important;
       }
 
       .hero {
@@ -359,12 +369,14 @@ $secondary-font: Consolas,monaco,monospace;
    }
 }
 
+
+
 @media only screen and (min-width: 1600px) {
    * {
       font-size: 17px;
 
       main,.hero-container {
-         width: 60% !important;
+         width: 65% !important;
       }
    }
 }

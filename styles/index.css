@@ -39,7 +39,7 @@
 
 * body .hero {
   position: relative;
-  min-height: 35rem;
+  min-height: 36rem;
   background: linear-gradient(150.26deg, rgba(0, 39, 67, 0.9) 10.27%, rgba(0, 52, 90, 0.9) 92.01%), url("../resources/hero.jpg");
   background-position: center;
   background-size: cover;
@@ -91,7 +91,7 @@
   position: absolute;
   top: 1em;
   right: -1em;
-  width: 180px;
+  width: 140px;
   z-index: 0 !important;
 }
 

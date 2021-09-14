@@ -82,7 +82,7 @@ $secondary-font: Consolas,monaco,monospace;
                border: 1px solid $main-color;
                border-radius: 4px;
                text-align: center;
-               padding: 0.6em 0;
+               padding: .7em 0;
                font-weight: 700 !important;
                margin-top: 1.5em !important;
 
@@ -314,6 +314,11 @@ $secondary-font: Consolas,monaco,monospace;
       }
 
       .hero {
+   
+         h2, h2 > .text-highlight {
+            font-size: 1.3em;
+         }
+
          .hero-container {
             display: grid;
             grid-template-columns: auto 40%;
@@ -323,6 +328,10 @@ $secondary-font: Consolas,monaco,monospace;
    
                .hero-text {
                   margin-top: unset !important;
+               }
+
+               a {
+                  width: 50%;
                }
                
             }
@@ -369,7 +378,17 @@ $secondary-font: Consolas,monaco,monospace;
    }
 }
 
+@media only screen and (min-width: 900px) { 
+   h1 {
+      font-size: 4em !important;
+   }
+}
 
+@media only screen and (min-width: 1150px) { 
+   h1 {
+      font-size: 5em !important;
+   }
+}
 
 @media only screen and (min-width: 1600px) {
    * {

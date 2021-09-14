@@ -76,7 +76,7 @@
   border: 1px solid #0094FF;
   border-radius: 4px;
   text-align: center;
-  padding: 0.6em 0;
+  padding: .7em 0;
   font-weight: 700 !important;
   margin-top: 1.5em !important;
 }
@@ -321,6 +321,9 @@
   * article {
     padding-top: 8em !important;
   }
+  * .hero h2, * .hero h2 > .text-highlight {
+    font-size: 1.3em;
+  }
   * .hero .hero-container {
     display: -ms-grid;
     display: grid;
@@ -332,6 +335,9 @@
   }
   * .hero .hero-container .content-container .hero-text {
     margin-top: unset !important;
+  }
+  * .hero .hero-container .content-container a {
+    width: 50%;
   }
   * .hero .hero-container .image-container {
     width: 100% !important;
@@ -359,6 +365,18 @@
   * .about-text .technologies ul li {
     float: left;
     margin-left: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 4em !important;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  h1 {
+    font-size: 5em !important;
   }
 }
 
